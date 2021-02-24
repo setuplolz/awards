@@ -1,0 +1,30 @@
+// this file only for text style 
+
+.big {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $text-black;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    padding-right: 5px;
+
+    &:hover {
+        color: $text-hover;
+    }
+}
+
+.medium {
+    font-size: 1.7rem;
+}
+
+.small-hover {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 25px;
+    text-decoration: none;
+    color: $text-black;
+
+    &:hover {
+        color: $text-hover;
+    }
+}

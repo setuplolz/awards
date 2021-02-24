@@ -1,0 +1,118 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    border-bottom: 1px solid $color-border;
+}
+
+.left {
+    height: 7rem;
+    border-right: 1px solid $color-border;
+    transition: all 0.3s ease-in-out
+}
+
+.box-left {
+    display: flex;
+    padding: 2.3rem;
+    overflow: hidden;
+    min-width: 11.5rem;
+}
+
+.burger {
+    top: -1px;
+    position: relative;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.3rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+
+.line {
+    position: relative;
+    margin-right: 1rem;
+    border-radius: 2px;
+
+    &,
+    &::before,
+    &::after {
+        width: 1.5rem;
+        height: 2px;
+        background-color: #202121;
+        display: inline-block;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+    }
+
+    &::before {
+        top: -4px;
+    }
+
+    &::after {
+        top: 4px;
+    }
+}
+
+
+.menu-text {
+    margin-top: 4px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+//////center
+
+.center {
+    width: 74%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.3rem;
+}
+
+.search-box {
+    padding: 0 2.3rem;
+    cursor: pointer;
+}
+
+.logo-header {}
+
+.login {
+    font-size: 1.3rem;
+    color: $text-black;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        color: $color-button;
+    }
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19rem;
+    height: 7rem;
+    background: $color-button;
+    font-size: 1.3rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        background: $hover-button;
+    }
+}
