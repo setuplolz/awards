@@ -120,10 +120,13 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 37rem;
     width: 42rem;
     background-color: white;
     margin-bottom: 3.5rem;
+
+    & div {
+        margin-bottom: 1.2rem;
+    }
 }
 
 .info-content {
@@ -143,11 +146,23 @@
     font-weight: 600;
     border-radius: 3.4rem;
     border: 1px solid #DBE0DF;
-    padding: 5px 20px 5px 20px;
+    padding: 0 2rem;
+    line-height: 3.4rem;
+    height: 3.4rem;
     transition: color 0.3s ease-in-out;
 
     &:hover {
         border-color: #49c5b6;
         color: #49c5b6;
+    }
+}
+
+.view-btn {
+
+    & a {
+        font-size: 3rem;
+        font-weight: 600;
+        color: $color-button;
+        text-decoration: none;
     }
 }
