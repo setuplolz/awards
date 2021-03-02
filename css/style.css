@@ -161,7 +161,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 42rem;
+  width: 49.35rem;
   background-color: white;
   margin-bottom: 3.5rem; }
   .info-block div {
@@ -170,10 +170,21 @@ body {
 .info-content {
   padding-top: 3rem;
   padding: 2rem; }
+  .info-content span {
+    color: #A6ABAB; }
 
 .info-button {
   display: flex;
-  padding: 0 20px 20px 20px; }
+  padding: 0 20px 20px 20px;
+  align-items: center; }
+
+.box-users {
+  display: flex; }
+  .box-users li {
+    margin-right: 6px;
+    list-style: none; }
+  .box-users img {
+    border-radius: 50%; }
 
 .info-button a {
   text-decoration: none;
@@ -190,11 +201,43 @@ body {
     border-color: #49c5b6;
     color: #49c5b6; }
 
-.view-btn a {
-  font-size: 3rem;
-  font-weight: 600;
-  color: #49c5b6;
-  text-decoration: none; }
+.view-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+  .view-btn figure {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 3px solid #49c5b6;
+    border-bottom: none;
+    border-left: none;
+    transform: rotate(135deg);
+    margin-left: 1rem; }
+  .view-btn a {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #49c5b6;
+    text-decoration: none; }
+
+.row-btn {
+  display: flex; }
+  .row-btn span {
+    font-size: 1.5rem; }
+  .row-btn a {
+    text-decoration: none;
+    color: #202121;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 3.4rem;
+    border: 1px solid #202121;
+    padding: 0 2rem;
+    line-height: 3.4rem;
+    height: 3.4rem;
+    transition: color 0.3s ease-in-out; }
+    .row-btn a:hover {
+      border-color: #DBE0DF;
+      color: #DBE0DF; }
 
 .header {
   cursor: pointer;
