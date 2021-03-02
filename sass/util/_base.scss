@@ -1,38 +1,37 @@
-// this file only for globasl styles 
+// this file only for globasl styles
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; // 1rem = 10px, 10/16px = 62.5%
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10/16px = 62.5%
 }
 
 body {
-    font-family: "apercu", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: #202121;
-    background: $background;
+  font-family: "Arimo", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #202121;
+  background: $background;
 }
 
 .all-padding {
-    padding-left: 6.6rem;
-    padding-right: 6.6rem;
+  padding-left: 6.6rem;
+  padding-right: 6.6rem;
 }
 
-
 .smth {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7rem;
-    border-bottom: 1px solid $color-border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  border-bottom: 1px solid $color-border;
 }

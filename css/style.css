@@ -52,7 +52,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "apercu", sans-serif;
+  font-family: "Arimo", sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #202121;
@@ -77,23 +77,27 @@ body {
 
 .blocks {
   display: flex;
-  justify-content: center; }
-
-.block-1 {
-  display: flex;
-  flex-direction: column;
-  background-color: #fcfcfc;
+  justify-content: center;
+  gap: 3.5rem;
   margin-bottom: 3.5rem; }
 
-.block-1:not(:first-child) {
-  margin-left: 3.5rem; }
+.block {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #fcfcfc; }
 
 .picture {
-  width: 100%; }
-
-.picture img {
   width: 100%;
-  height: 100%; }
+  overflow: hidden; }
+  .picture img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out; }
+  .picture:hover img {
+    transform: scale(1.05);
+    position: relative;
+    filter: brightness(0.5); }
 
 .data {
   padding: 2rem; }
@@ -106,21 +110,29 @@ body {
 .developers {
   display: flex;
   justify-content: space-between;
-  padding: 1.1rem 2rem 1rem 2rem;
-  border-top: 1px solid black; }
+  padding: 1rem 2rem 1rem 2rem;
+  position: relative; }
+  .developers::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: 1px;
+    padding: 0 20px;
+    background: red; }
 
 .dev-left {
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  flex: 1;
+  align-items: center;
+  white-space: nowrap; }
   .dev-left a img {
     border-radius: 50%; }
   .dev-left span {
     font-size: 1.2rem;
     text-decoration: none;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-transform: uppercase;
     padding-left: 8px;
     padding-right: 5px; }
   .dev-left a {
@@ -134,28 +146,22 @@ body {
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: 1px;
-    padding: 1px 5px 0 5px;
+    padding: 1px 5px;
     line-height: normal; }
 
-.hm {
-  background-color: #9FD2D6;
+.lable {
   margin-right: 3px;
-  border-radius: 3.6rem; }
-
-.dev {
-  background-color: #8154EF;
-  margin-right: 3px;
-  border-radius: 3.6rem; }
-
-.sotd {
-  background-color: #FF4E4E;
-  margin-right: 3px;
-  border-radius: 3.6rem; }
-
-.mw {
-  background-color: #FF8601;
-  margin-right: 3px;
-  border-radius: 3.6rem; }
+  border-radius: 3.6rem;
+  display: flex;
+  align-items: center; }
+  .lable--hm {
+    background-color: #9fd2d6; }
+  .lable--dev {
+    background-color: #8154ef; }
+  .lable--sotd {
+    background-color: #ff4e4e; }
+  .lable--mw {
+    background-color: #ff8601; }
 
 .info-block {
   display: flex;
@@ -188,11 +194,11 @@ body {
 
 .info-button a {
   text-decoration: none;
-  color: #A6ABAB;
+  color: #a6abab;
   font-size: 1.4rem;
   font-weight: 600;
   border-radius: 3.4rem;
-  border: 1px solid #DBE0DF;
+  border: 1px solid #dbe0df;
   padding: 0 2rem;
   line-height: 3.4rem;
   height: 3.4rem;
@@ -236,13 +242,13 @@ body {
     height: 3.4rem;
     transition: color 0.3s ease-in-out; }
     .row-btn a:hover {
-      border-color: #DBE0DF;
-      color: #DBE0DF; }
+      border-color: #dbe0df;
+      color: #dbe0df; }
 
 .header {
   cursor: pointer;
   height: 41.8rem;
-  transition: all .5s;
+  transition: all 0.5s;
   width: 100%;
   background-repeat: unset;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.dezeen.com/uploads/2020/01/whidbey-island-farm-mwworks-washington-usa_dezeen_hero-852x479.jpg); }
@@ -338,7 +344,7 @@ body {
   border-radius: 3.4rem;
   background-color: #49c5b6;
   padding: 0 2rem;
-  transition: all .3s ease-in-out; }
+  transition: all 0.3s ease-in-out; }
   .visit:hover {
     background: #388077; }
 
@@ -353,7 +359,7 @@ body {
   align-items: center;
   height: 3.4rem;
   border-radius: 3.4rem;
-  border: 1px solid #DBE0DF;
+  border: 1px solid #dbe0df;
   padding: 0 2rem; }
 
 .white {
@@ -367,9 +373,12 @@ body {
 
 .box-svg {
   display: flex; }
-
-.box-svg svg:hover {
-  fill: #388077; }
+  .box-svg:hover > svg {
+    fill: #388077; }
+  .box-svg:hover > .button-svg {
+    border-color: #388077; }
+    .box-svg:hover > .button-svg a {
+      color: #388077; }
 
 .button-svg {
   display: flex;
@@ -381,15 +390,11 @@ body {
   margin-left: 2px;
   border-left: none;
   border-radius: 0px 34px 34px 0px; }
-  .button-svg:hover {
-    border-color: #388077; }
 
 .jury {
   text-decoration: none;
   color: white;
   font-weight: 500; }
-  .jury:hover {
-    color: #388077; }
 
 .photo a > img {
   border-radius: 50%; }

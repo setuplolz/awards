@@ -1,215 +1,198 @@
 .header {
-    cursor: pointer;
-    height: 41.8rem;
-    transition: all .5s;
-    width: 100%;
-    background-repeat: unset;
+  cursor: pointer;
+  height: 41.8rem;
+  transition: all 0.5s;
+  width: 100%;
+  background-repeat: unset;
 
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(https://static.dezeen.com/uploads/2020/01/whidbey-island-farm-mwworks-washington-usa_dezeen_hero-852x479.jpg);
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://static.dezeen.com/uploads/2020/01/whidbey-island-farm-mwworks-washington-usa_dezeen_hero-852x479.jpg);
 }
 
 .upp {
-    display: flex;
-    justify-content: center;
-    padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
 }
 
 .upp__left {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    color: white;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  color: white;
 }
 
 .upp__right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3.4rem;
-    width: 3.4rem;
-    border: 1px #fff solid;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.4rem;
+  width: 3.4rem;
+  border: 1px #fff solid;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
 
-    &:hover {
-        border: 1px rgb(184, 181, 181) solid;
-    }
-
+  &:hover {
+    border: 1px rgb(184, 181, 181) solid;
+  }
 }
 
 .share {
-    color: white;
+  color: white;
 }
 
 .icon {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
-
 
 ///// circle
 
 .header-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .title a {
-    font-size: 3.8rem;
-    font-weight: 800;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
+  font-size: 3.8rem;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .sub-title {
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    color: white;
-    text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
 }
 
 .sub-title span {
-    font-weight: bold;
-    color: #49c5b6;
+  font-weight: bold;
+  color: #49c5b6;
 }
 
 .sub-title span:hover {
-    color: white;
-    transition: color 0.3s ease-in-out;
+  color: white;
+  transition: color 0.3s ease-in-out;
 }
 
 .box {
-
-    height: 5rem;
-    width: 5rem;
-
+  height: 5rem;
+  width: 5rem;
 }
 
 .circle {
-    background-color: yellow;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-    opacity: 1;
+  background-color: yellow;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  opacity: 1;
 }
 
 .circle-line {
-    background-color: red;
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
+  background-color: red;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
 }
 
-
 .header__bottom {
-    display: flex;
-    margin-top: 5rem;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-between;
 }
 
 .button {
-    display: flex;
+  display: flex;
 }
 
 .visit {
-    display: flex;
-    align-items: center;
-    height: 3.4rem;
-    border-radius: 3.4rem;
-    background-color: $color-button;
-    padding: 0 2rem;
-    transition: all .3s ease-in-out;
+  display: flex;
+  align-items: center;
+  height: 3.4rem;
+  border-radius: 3.4rem;
+  background-color: $color-button;
+  padding: 0 2rem;
+  transition: all 0.3s ease-in-out;
 
-    &:hover {
-        background: $hover-button;
-    }
-
+  &:hover {
+    background: $hover-button;
+  }
 }
 
 .green {
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
 }
 
 .collect {
-    display: flex;
-    align-items: center;
-    height: 3.4rem;
-    border-radius: 3.4rem;
-    border: 1px solid #DBE0DF;
-    padding: 0 2rem;
-
-
+  display: flex;
+  align-items: center;
+  height: 3.4rem;
+  border-radius: 3.4rem;
+  border: 1px solid #dbe0df;
+  padding: 0 2rem;
 }
 
 .white {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
 }
 
 .bottom-right {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .box-svg {
-    display: flex;
-}
+  display: flex;
 
-.box-svg svg:hover {
+  &:hover > svg {
     fill: $hover-button;
+  }
+  &:hover > .button-svg {
+    border-color: $hover-button;
+    & a {
+      color: $hover-button;
+    }
+  }
 }
 
 .button-svg {
-    display: flex;
-    align-items: center;
-    padding: 0 2rem;
-    height: 3.4rem;
-    border: 1px solid white;
-    margin-right: 2rem;
-    margin-left: 2px;
-    border-left: none;
-    border-radius: 0px 34px 34px 0px;
-
-    &:hover {
-        border-color: $hover-button;
-    }
-
-
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  height: 3.4rem;
+  border: 1px solid white;
+  margin-right: 2rem;
+  margin-left: 2px;
+  border-left: none;
+  border-radius: 0px 34px 34px 0px;
 }
 
-
 .jury {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-
-    &:hover {
-        color: $hover-button;
-    }
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
 }
 
 .photo {
-
-    a>img {
-        border-radius: 50%;
-    }
-
+  a > img {
+    border-radius: 50%;
+  }
 }
 
 .photo img:hover {
-    opacity: 0.55;
-    transition: all 0.3s ease-in-out;
+  opacity: 0.55;
+  transition: all 0.3s ease-in-out;
 }
