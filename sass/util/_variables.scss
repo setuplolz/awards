@@ -25,5 +25,14 @@ $text-grey: #A6ABAB;
     text-decoration: line-through;
 }
 
+.grey-t {
+    color: $color-button;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+        color: $text-black;
+    }
+}
+
 
 ///////
