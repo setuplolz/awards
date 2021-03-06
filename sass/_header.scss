@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   background-repeat: unset;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://static.dezeen.com/uploads/2020/01/whidbey-island-farm-mwworks-washington-usa_dezeen_hero-852x479.jpg);
@@ -13,7 +13,6 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url(https://static.dezeen.com/uploads/2020/01/whidbey-island-farm-mwworks-washington-usa_dezeen_hero-852x479.jpg);
   }
-
 }
 
 .upp {
@@ -40,9 +39,7 @@
   }
 }
 
-
 .share {
-
   & i:hover {
     color: $color-button;
     border: 1px $color-button solid;
@@ -130,7 +127,7 @@
 }
 
 .style-mobile circle {
-  stroke: #00FCA3;
+  stroke: #00fca3;
 }
 
 .box {
@@ -193,7 +190,6 @@
   color: whitesmoke;
 }
 
-
 .button {
   display: flex;
   position: absolute;
@@ -223,7 +219,6 @@
   color: white;
   font-weight: 500;
 }
-
 
 .white-btn {
   text-decoration: none;
@@ -255,11 +250,11 @@
 .box-svg {
   display: flex;
 
-  &:hover>svg {
+  &:hover > svg {
     fill: $hover-button;
   }
 
-  &:hover>.button-svg {
+  &:hover > .button-svg {
     border-color: $hover-button;
 
     & a {
@@ -287,7 +282,7 @@
 }
 
 .photo {
-  a>img {
+  a > img {
     border-radius: 50%;
   }
 }
