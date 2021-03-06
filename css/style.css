@@ -1170,7 +1170,58 @@ body {
 
 .language {
   float: left; }
+  .language a {
+    text-decoration: none; }
+  .language svg {
+    height: auto;
+    width: 1.8rem;
+    margin-left: 5px; }
 
 .close-nav {
   display: flex;
   float: right; }
+  .close-nav a {
+    text-decoration: none;
+    color: #202121;
+    text-transform: uppercase; }
+
+.menu-item {
+  position: relative;
+  display: block;
+  padding: 24px 36px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: #202121;
+  cursor: pointer;
+  background: #f4f7f6;
+  border-bottom: 1px solid #e6eaea;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out; }
+  .menu-item:hover {
+    background-color: white; }
+
+.item-new {
+  background-color: #a1d5cf; }
+
+.item-badges {
+  padding: 5px 7px 3px 7px;
+  background-color: #42ab9e;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 2px;
+  color: #fcfcfc;
+  margin-left: 5px; }
+
+.item-circle {
+  height: 2.4rem;
+  width: 2.4rem;
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 50%;
+  top: 50%;
+  display: inline-flex;
+  align-items: center;
+  right: 2.5rem;
+  transform: translateY(-50%);
+  justify-content: center; }
